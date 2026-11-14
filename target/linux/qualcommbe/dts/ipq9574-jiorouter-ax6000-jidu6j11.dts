@@ -175,6 +175,7 @@
 	pcie@0 {
 		device_type = "pci";
 		reg = <0x0 0x0 0x0 0x0 0x0>;
+		bus-range = <0x01 0xff>;
 		#address-cells = <3>;
 		#size-cells = <2>;
 		ranges;
@@ -532,22 +533,6 @@
 		function = "gpio";
 		drive-strength = <8>;
 		bias-pull-up;
-	};
-
-	mdio_pins: mdio-state {
-		mdc-pins {
-			pins = "gpio38";
-			function = "mdc";
-			drive-strength = <8>;
-			bias-disable;
-		};
-
-		mdio-pins {
-			pins = "gpio39";
-			function = "mdio";
-			drive-strength = <8>;
-			bias-pull-up;
-		};
 	};
 
 	pcie1_pins: pcie1-state {
