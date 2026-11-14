@@ -5,10 +5,10 @@ PKG_NAME:=ipq-wifi
 PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL=$(PROJECT_GIT)/project/firmware/qca-wireless.git
-PKG_SOURCE_DATE:=2026-11-12
-PKG_SOURCE_VERSION:=e1c4cbaf43917e19779dbf9f8e276e31116bcaef
-PKG_MIRROR_HASH:=2d525d7af66de1dc947aff2653669265ccad678424e7fdfe71aebc6c55692437
+PKG_SOURCE_URL=https://github.com/retransmit/firmware_qca-wireless.git
+PKG_SOURCE_DATE:=2026-11-14
+PKG_SOURCE_VERSION:=ca1967f6b2708c2baa384f3dfc61d8935a6f68f1
+PKG_MIRROR_HASH:=7dcfa84acb31a1f00049f1c0902d26790796fc942e014b1d7935383591132f47
 PKG_FLAGS:=nonshared
 
 include $(INCLUDE_DIR)/package.mk
@@ -57,6 +57,7 @@ ALLWIFIBOARDS:= \
 	iodata_wn-dax3000gr \
 	jdcloud_re-cs-02 \
 	jdcloud_re-ss-01 \
+	jiorouter_ax6000-jidu6j11 \
 	link_nn6000 \
 	linksys_homewrk \
 	linksys_mr2000 \
@@ -276,6 +277,7 @@ $(eval $(call generate-ipq-wifi-package,ignitenet_ss-w2-ac2600,Ignitenet SS-W2-A
 $(eval $(call generate-ipq-wifi-package,iodata_wn-dax3000gr,I-O DATA WN-DAX3000GR))
 $(eval $(call generate-ipq-wifi-package,jdcloud_re-cs-02,JDCloud RE-CS-02))
 $(eval $(call generate-ipq-wifi-package,jdcloud_re-ss-01,JDCloud RE-SS-01))
+$(eval $(call generate-ipq-wifi-package,jiorouter_ax6000-jidu6j11,JioRouter AX6000 JIDU6J11))
 $(eval $(call generate-ipq-wifi-package,link_nn6000,Link NN6000))
 $(eval $(call generate-ipq-wifi-package,linksys_homewrk,Linksys HomeWRK))
 $(eval $(call generate-ipq-wifi-package,linksys_mr2000,Linksys MR2000))
