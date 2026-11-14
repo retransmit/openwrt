@@ -32,6 +32,9 @@ platform_do_upgrade() {
 		CI_DATAPART="rootfs_data"
 		emmc_do_upgrade "$1"
 		;;
+	jiorouter,ax6000-jidu6j11)
+		nand_do_upgrade "$1"
+		;;
 	linksys,ln6001)
 		ln6001_do_upgrade "$1" || return 1
 		;;
