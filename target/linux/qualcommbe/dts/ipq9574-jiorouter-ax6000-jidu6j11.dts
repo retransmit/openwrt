@@ -183,7 +183,7 @@
 			compatible = "pci17cb,1104";
 			reg = <0x10000 0x0 0x0 0x0 0x0>;
 			qcom,ath11k-fw-memory-mode = <2>;
-			qcom,ath11k-calibration-variant = "JIDU6J11";
+			qcom,ath11k-calibration-variant = "JIDU6J11-6811";
 			nvmem-cells = <&base_mac 3>, <&cal_5g>;
 			nvmem-cell-names = "mac-address", "calibration";
 		};
@@ -638,7 +638,7 @@
 
 &wifi0 {
 	qcom,ath11k-fw-memory-mode = <2>;
-	qcom,ath11k-calibration-variant = "JIDU6J11";
+	qcom,ath11k-calibration-variant = "JIDU6J11-6811";
 	nvmem-cells = <&base_mac 2>, <&cal_2g>;
 	nvmem-cell-names = "mac-address", "calibration";
 	status = "okay";
